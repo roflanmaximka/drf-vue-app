@@ -1,10 +1,9 @@
-from django.urls import path
-from .views import index
+from .views import RecordViewSet
 from rest_framework import routers
 
 
 router = routers.DefaultRouter()
-router.register('table', TableViewSet)
+router.register('record', RecordViewSet)
 
 urlpatterns = router.urls
 
